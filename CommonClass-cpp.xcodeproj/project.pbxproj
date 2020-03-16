@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25995FFC241A0299008B52F1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25995FFB241A0299008B52F1 /* main.cpp */; };
+		8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E97B365241D0ED300E80CCD /* AstarSearch.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		25995FF8241A0299008B52F1 /* CommonClass-cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CommonClass-cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25995FFB241A0299008B52F1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8E97B365241D0ED300E80CCD /* AstarSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AstarSearch.cpp; sourceTree = "<group>"; };
+		8E97B366241D0ED300E80CCD /* AstarSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AstarSearch.hpp; sourceTree = "<group>"; };
+		8E97B368241D190200E80CCD /* 1.board */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.board; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				25995FFB241A0299008B52F1 /* main.cpp */,
+				8E97B365241D0ED300E80CCD /* AstarSearch.cpp */,
+				8E97B366241D0ED300E80CCD /* AstarSearch.hpp */,
+				8E97B368241D190200E80CCD /* 1.board */,
 			);
 			path = "CommonClass-cpp";
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25995FFC241A0299008B52F1 /* main.cpp in Sources */,
+				8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ME92NL5RP7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
