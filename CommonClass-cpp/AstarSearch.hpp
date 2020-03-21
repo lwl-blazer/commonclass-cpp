@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 
-enum class State{kEmpty, kObstacle};
+enum class State{kEmpty, kObstacle, kClosed};
 
 using std::vector;
 using std::string;
@@ -28,6 +28,8 @@ public:
     vector<vector<State>> Search(vector<vector<State>>grid, int initial_point[2], int goal_point[2]);
     string CellString(State cell);
     void PrintBoard(const vector<vector<State>>board);
+    int Heuristic(int x1, int y1, int x2, int y2);
+    void AddToOpen(int x, int y, int g, int h, vector<vector<int>> &open_nodes, vector<vector<State>>&grid);
 };
 
 #endif /* AstarSearch_hpp */
