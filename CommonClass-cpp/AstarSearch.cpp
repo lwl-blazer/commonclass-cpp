@@ -11,6 +11,10 @@
 #include <fstream>
 #include <sstream>
 
+#include <algorithm>
+
+using std::sort;
+using std::abs;
 using std::ifstream;
 using std::istringstream;
 
@@ -61,6 +65,19 @@ vector<vector<State>> AStartSearch::Search(vector<vector<State> > grid, int *ini
     
     AddToOpen(x, y, g, h, open, grid);
 
+    while (open.size() > 0) {
+        CellSort(&open);
+        vector<int> curminfnode = open.back();
+        open.pop_back();
+        int curx = curminfnode[0];
+        int cury = curminfnode[1];
+        grid[curx][cury] = State::kPath;
+        
+        if (curx == goal_point[0] && cury == goal_point[1]) {
+            return grid;
+        }
+    }
+    std::cout << "No Path found!" << "\n";
     return vector<vector<State>>{};
 }
 
@@ -95,4 +112,36 @@ void AStartSearch::AddToOpen(int x, int y, int g, int h, vector<vector<int> > &o
     vector<int> node {x, y, g, h};
     open_nodes.push_back(node);
     grid[x][y] = State::kClosed;
+}
+
+//compare the f-value
+/*bool AStartSearch::Compare(const vector<int> a, const vector<int> b){
+    //f=g+h
+    int f1 = a[2] + a[3];
+    int f2 = b[2] + b[3];
+    return f1 > f2;
+}*/
+
+
+void AStartSearch::CellSort(vector<vector<int> > *v){
+    
+    struct { //compare the f-value
+        bool operator()(vector<int>a, vector<int>b){
+            int f1 = a[2] + a[3];
+            int f2 = b[2] + b[3];
+            return f1 > f2;
+        }
+    }Compare;
+    sort(v->begin(), v->end(), Compare);
+}
+
+
+/*检查当前node不是障碍State::kObstacle**/
+bool AStartSearch::CheckValidCell(int x, int y, vector<vector<State> > &grid){
+    if (x >= 0 && x < grid.size() && y >= 0 && y < grid[0].size()) { //判断x,y在grid内 不懂是grid[0].size()
+        if (State::kEmpty == grid[x][y]) { //不是障碍物
+            return true;
+        }
+    }
+    return false;
 }

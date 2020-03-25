@@ -7,11 +7,11 @@
 //
 
 #include <iostream>
+#include <algorithm>
 #include "AstarSearch.hpp"
 #include "Test.hpp"
 
 using std::cout;
-
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -28,9 +28,8 @@ int main(int argc, const char * argv[]) {
     star.PrintBoard(solution);
     
     Test test;
-    test.TestHeuristic(star);
-    test.TestAddToOpen();
-    
+    test.example();
+        
     /*
     int a = 5;
     cout << "The int a equals:" << a << "\n";

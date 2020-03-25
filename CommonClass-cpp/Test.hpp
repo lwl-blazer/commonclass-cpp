@@ -120,6 +120,20 @@ public:
         cout << "----------------------" << "\n";
     }
     
+    void example(){
+        int i;
+        cout <<"Enter an integer value for i:";
+        std::cin >> i;
+        const int j = i * 2;  //j在运行时计算，初始化后值不能进行改变
+        
+        constexpr int k = 3; //constexpr 可以在编译时求值
+        
+        cout << "j = " << j << "\n";
+        cout << "k = " << k << "\n";
+    }
+    
+    
+    
 private:
     void PrintVectorOfVectors(vector<vector<int>> v) {
         for (auto row : v) {
