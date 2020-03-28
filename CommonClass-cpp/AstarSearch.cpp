@@ -85,9 +85,18 @@ string AStartSearch::CellString(State cell){
     switch (cell) {
         case State::kObstacle:
             return "⛰️  ";
-            
+            case State::kStart:
+            return "🚦  ";
+        case State::kFinish:
+            return "🏁  ";
+        case State::kEmpty:
+            return "E  ";
+        case State::kClosed:
+            return "C  ";
+        case State::kPath:
+            return "🚗  ";
         default:
-            return "0  ";
+            return "?  ";
     }
 }
 
@@ -145,3 +154,25 @@ bool AStartSearch::CheckValidCell(int x, int y, vector<vector<State> > &grid){
     }
     return false;
 }
+
+void AStartSearch::ExpandNeighbors(vector<int> &current_node, int *goal, vector<vector<int> > &openList, vector<vector<State> > &grid){
+
+    int curx = current_node[0];
+    int cury = current_node[1];
+    int curg = current_node[2];
+    
+    int newg = curg + 1;
+    std::cout << __func__ << ", cru x:"<<curx<<", cur y:"<<cury<<"\n";
+
+    for (int i = 0; i < 4; i ++) {
+        int poetential_x = curx + delta[i][0];
+        int poetential_y = cury + delta[i][1];
+        if (CheckValidCell(poetential_x, poetential_y, grid)) {
+            int newh = Heuristic(poetential_x, poetential_y, goal[0], goal[1]);
+            std::cout<< poetential_x<<poetential_y<<goal[0]<<goal[1]<<newg<<newh<<"\n";
+            AddToOpen(poetential_x, poetential_y, newg, newh, openList, grid);
+        }
+    }
+
+}
+

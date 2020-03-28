@@ -12,13 +12,14 @@
 #include <string>
 #include <vector>
 
-enum class State{kEmpty, kObstacle, kClosed, kPath};
+enum class State{kStart, kFinish, kEmpty, kObstacle, kClosed, kPath};
 
 using std::vector;
 using std::string;
 
 class AStartSearch{
-  
+  const int delta[4][2] = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+
 public:
     AStartSearch();
     ~AStartSearch();
@@ -33,7 +34,7 @@ public:
     //bool Compare(const vector<int> a, const vector<int>b);
     void CellSort(vector<vector<int>> *v);
     bool CheckValidCell(int x, int y, vector<vector<State>>&grid);
-    
+    void ExpandNeighbors(vector<int>&current_node, int *goal, vector<vector<int>>&openList, vector<vector<State>>&grid);
     
 };
 
