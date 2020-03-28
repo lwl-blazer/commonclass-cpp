@@ -19,17 +19,21 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     
     AStartSearch star;
-    vector<vector<State>> states  = star.ReadBoardFile("/Users/blazer/Documents/blazer/Code/commonclass-cpp/CommonClass-cpp/1.board");
-    
-    star.PrintBoard(states);
+    vector<vector<State>> board  = star.ReadBoardFile("/Users/blazer/Documents/blazer/Code/commonclass-cpp/CommonClass-cpp/1.board");
+    star.PrintBoard(board);
 
+    
     int init[2]{0, 0};
     int goal[2]{4, 5};
-    auto solution = star.Search(states, init, goal);
-    star.PrintBoard(solution);
     
+    vector<vector<State>>path = star.Search(board, init, goal);
+    star.PrintBoard(path);
+    
+    
+    /*
     Test test;
     test.example();
+     */
         
     /*
     int a = 5;

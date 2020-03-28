@@ -26,6 +26,29 @@ AStartSearch::~AStartSearch(){
     
 }
 
+vector<vector<State>> AStartSearch::ReadBoardFile(string path){
+    ifstream myfile(path);
+    vector<vector<State>> board{};
+    if (myfile) {
+        string line;
+        while (std::getline(myfile, line)) {
+            vector<State> row = ParseLine(line);
+            board.push_back(row);
+        }
+    }
+    std::cout<< "board.size() or i:"<<board.size()<<", board[0].size() or j:"<<board[0].size() << "\n";
+    return board;
+}
+
+void AStartSearch::PrintBoard(const vector<vector<State> > board){
+    for (vector<State> row: board){
+        for (State s:row){
+            std::cout << CellString(s);
+        }
+        printf("\n");
+    }
+}
+
 vector<State> AStartSearch::ParseLine(string line){
     istringstream sline(line);
     int n;
@@ -41,19 +64,30 @@ vector<State> AStartSearch::ParseLine(string line){
     return row;
 }
 
-vector<vector<State>> AStartSearch::ReadBoardFile(string path){
-    ifstream myfile(path);
-    vector<vector<State>> board{};
-    if (myfile) {
-        string line;
-        while (std::getline(myfile, line)) {
-            vector<State> row = ParseLine(line);
-            board.push_back(row);
-        }
+string AStartSearch::CellString(State cell){
+    switch (cell) {
+        case State::kObstacle:
+            return "⛰️  ";
+            case State::kStart:
+            return "🚦  ";
+        case State::kFinish:
+            return "🏁  ";
+        case State::kEmpty:
+            return "E  ";
+        case State::kClosed:
+            return "C  ";
+        case State::kPath:
+            return "🚗  ";
+        default:
+            return "?  ";
     }
-    std::cout<< "board.size() or i:"<<board.size()<<", board[0].size() or j:"<<board[0].size() << "\n";
-    return board;
 }
+
+
+
+
+
+
 
 vector<vector<State>> AStartSearch::Search(vector<vector<State> > grid, int *initial_point, int *goal_point){
    
@@ -81,33 +115,8 @@ vector<vector<State>> AStartSearch::Search(vector<vector<State> > grid, int *ini
     return vector<vector<State>>{};
 }
 
-string AStartSearch::CellString(State cell){
-    switch (cell) {
-        case State::kObstacle:
-            return "⛰️  ";
-            case State::kStart:
-            return "🚦  ";
-        case State::kFinish:
-            return "🏁  ";
-        case State::kEmpty:
-            return "E  ";
-        case State::kClosed:
-            return "C  ";
-        case State::kPath:
-            return "🚗  ";
-        default:
-            return "?  ";
-    }
-}
 
-void AStartSearch::PrintBoard(const vector<vector<State> > board){
-    for (vector<State> row: board){
-        for (State s:row){
-            std::cout << CellString(s);
-        }
-        printf("\n");
-    }
-}
+
 
 //manhattan distance 曼哈顿距离
 int AStartSearch::Heuristic(int x1, int y1, int x2, int y2){

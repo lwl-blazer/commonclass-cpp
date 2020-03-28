@@ -147,13 +147,7 @@ private:
     
     void PrintVectorOfVectors(vector<vector<State>> v) {
         AStartSearch star;
-        for (auto row : v) {
-            cout << "{ ";
-            for (auto col : row) {
-                cout << star.CellString(col) << " ";
-            }
-            cout << "}" << "\n";
-        }
+        star.PrintBoard(v);
     }
     
 };
