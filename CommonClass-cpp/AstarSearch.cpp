@@ -49,6 +49,33 @@ void AStartSearch::PrintBoard(const vector<vector<State> > board){
     }
 }
 
+vector<vector<State>> AStartSearch::Search(vector<vector<State> > grid, int *initial_point, int *goal_point){
+   
+    vector<vector<int>> open{};
+    int x = initial_point[0];
+    int y = initial_point[1];
+    int g = 0;
+    int h = Heuristic(x, y, goal_point[0],goal_point[1]);
+    
+    AddToOpen(x, y, g, h, open, grid);
+
+    while (open.size() > 0) {
+        CellSort(&open);
+        vector<int> curminfnode = open.back();
+        open.pop_back();
+        int curx = curminfnode[0];
+        int cury = curminfnode[1];
+        grid[curx][cury] = State::kPath;
+        
+        if (curx == goal_point[0] && cury == goal_point[1]) {
+            return grid;
+        }
+    }
+    std::cout << "No Path found!" << "\n";
+    return vector<vector<State>>{};
+}
+
+
 vector<State> AStartSearch::ParseLine(string line){
     istringstream sline(line);
     int n;
@@ -89,31 +116,7 @@ string AStartSearch::CellString(State cell){
 
 
 
-vector<vector<State>> AStartSearch::Search(vector<vector<State> > grid, int *initial_point, int *goal_point){
-   
-    vector<vector<int>> open{};
-    int x = initial_point[0];
-    int y = initial_point[1];
-    int g = 0;
-    int h = Heuristic(x, y, goal_point[0],goal_point[1]);
-    
-    AddToOpen(x, y, g, h, open, grid);
 
-    while (open.size() > 0) {
-        CellSort(&open);
-        vector<int> curminfnode = open.back();
-        open.pop_back();
-        int curx = curminfnode[0];
-        int cury = curminfnode[1];
-        grid[curx][cury] = State::kPath;
-        
-        if (curx == goal_point[0] && cury == goal_point[1]) {
-            return grid;
-        }
-    }
-    std::cout << "No Path found!" << "\n";
-    return vector<vector<State>>{};
-}
 
 
 
