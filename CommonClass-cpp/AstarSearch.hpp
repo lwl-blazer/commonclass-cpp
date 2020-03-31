@@ -12,24 +12,33 @@
 #include <string>
 #include <vector>
 
-enum class State{kEmpty, kObstacle, kClosed};
+enum class State{kStart, kFinish, kEmpty, kObstacle, kClosed, kPath};
 
 using std::vector;
 using std::string;
 
 class AStartSearch{
-  
+    
+    //方向
+    const int delta[4][2] = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+    
+    vector<State> ParseLine(string line);
+    string CellString(State cell);
+    
+    int Heuristic(int x1, int y1, int x2, int y2);
+    void AddToOpen(int x, int y, int g, int h, vector<vector<int>> &open_nodes, vector<vector<State>>&grid);
+    //bool Compare(const vector<int> a, const vector<int>b);
+    void CellSort(vector<vector<int>> *v);
+    bool CheckValidCell(int x, int y, vector<vector<State>>&grid);
+    void ExpandNeighbors(vector<int>&current_node, int *goal, vector<vector<int>>&openList, vector<vector<State>>&grid);
+    
 public:
     AStartSearch();
     ~AStartSearch();
     
-    vector<State> ParseLine(string line);
     vector<vector<State>> ReadBoardFile(string path);
     vector<vector<State>> Search(vector<vector<State>>grid, int initial_point[2], int goal_point[2]);
-    string CellString(State cell);
     void PrintBoard(const vector<vector<State>>board);
-    int Heuristic(int x1, int y1, int x2, int y2);
-    void AddToOpen(int x, int y, int g, int h, vector<vector<int>> &open_nodes, vector<vector<State>>&grid);
 };
 
 #endif /* AstarSearch_hpp */
