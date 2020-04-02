@@ -26,6 +26,7 @@ public:
     }
     
     void TestHeuristic(AStartSearch star){
+        /*
         cout << "----------------------" << "\n";
         cout << "Heuristic Function Test:";
         if (star.Heuristic(1, 2, 3, 4) != 4) {
@@ -41,7 +42,7 @@ public:
         } else {
              cout << "passed" << "\n";
         }
-        cout << "----------------------" << "\n";
+        cout << "----------------------" << "\n";*/
     }
 
 
@@ -67,6 +68,7 @@ public:
     }
     
     void TestAddToOpen(){
+        /*
         cout << "-------------" << "\n";
         cout << "AddToOpen Function Test:";
         int x = 3;
@@ -117,7 +119,7 @@ public:
             PrintVectorOfVectors(solution_grid);
             cout << "\n";
         }
-        cout << "----------------------" << "\n";
+        cout << "----------------------" << "\n";*/
     }
     
     void example(){
