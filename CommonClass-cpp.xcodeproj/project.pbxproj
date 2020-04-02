@@ -13,7 +13,6 @@
 		259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F02434A10D007917E5 /* AVLTree.cpp */; };
 		259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F32434A175007917E5 /* RedBlackTree.cpp */; };
 		8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E97B365241D0ED300E80CCD /* AstarSearch.cpp */; };
-		8E9E55372423B7A30024D4B4 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E55352423B7A30024D4B4 /* Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,8 +41,6 @@
 		8E97B365241D0ED300E80CCD /* AstarSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AstarSearch.cpp; sourceTree = "<group>"; };
 		8E97B366241D0ED300E80CCD /* AstarSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AstarSearch.hpp; sourceTree = "<group>"; };
 		8E97B368241D190200E80CCD /* 1.board */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.board; sourceTree = "<group>"; };
-		8E9E55352423B7A30024D4B4 /* Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
-		8E9E55362423B7A30024D4B4 /* Test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +77,7 @@
 				8E97B365241D0ED300E80CCD /* AstarSearch.cpp */,
 				8E97B366241D0ED300E80CCD /* AstarSearch.hpp */,
 				8E97B368241D190200E80CCD /* 1.board */,
+
 				8E9E55352423B7A30024D4B4 /* Test.cpp */,
 				8E9E55362423B7A30024D4B4 /* Test.hpp */,
 				259F10832433414E007917E5 /* BinaryTree.cpp */,
@@ -90,6 +88,7 @@
 				259F10F12434A10D007917E5 /* AVLTree.hpp */,
 				259F10F32434A175007917E5 /* RedBlackTree.cpp */,
 				259F10F42434A175007917E5 /* RedBlackTree.hpp */,
+
 			);
 			path = "CommonClass-cpp";
 			sourceTree = "<group>";
@@ -153,6 +152,7 @@
 			files = (
 				259F10852433414E007917E5 /* BinaryTree.cpp in Sources */,
 				8E9E55372423B7A30024D4B4 /* Test.cpp in Sources */,
+
 				25995FFC241A0299008B52F1 /* main.cpp in Sources */,
 				259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */,
 				8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */,

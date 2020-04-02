@@ -9,7 +9,6 @@
 #include <iostream>
 #include <algorithm>
 #include "AstarSearch.hpp"
-#include "Test.hpp"
 
 using std::cout;
 
