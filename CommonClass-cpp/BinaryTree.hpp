@@ -27,15 +27,16 @@ struct TreeNode {
 
 template<class T>
 class BinaryTree {
-    
-protected:
-    
-    TreeNode<T> root;
-    
+private:
+    std::function<void (T element)>block;
+    void preorderTraversalNode(TreeNode<T> node);
+    void inorderTraversalNode(TreeNode<T> node);
+    void postorderTraversalNode(TreeNode<T> node);
+
     TreeNode<T> predecessor(TreeNode<T> node);
     TreeNode<T> successor(TreeNode<T> node);
-
-    
+protected:
+    TreeNode<T> root;
     
 public:
     int size;
@@ -43,6 +44,7 @@ public:
     BinaryTree();
     ~BinaryTree();
 
+    void add(T element);
     bool isEmpty();
     void clear();
     int treeHeight();
