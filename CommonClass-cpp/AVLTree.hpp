@@ -11,8 +11,8 @@
 
 #include <stdio.h>
 #include "BinarySearchTree.hpp"
-
-class AVLTree final : public BinarySearchTree{
+template <class T>
+class AVLTree final : public BinarySearchTree<T>{
     
 };
 

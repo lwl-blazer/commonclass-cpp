@@ -12,7 +12,8 @@
 #include <stdio.h>
 #include "BinaryTree.hpp"
 
-class BinarySearchTree: public BinaryTree{
+template <class T>
+class BinarySearchTree: public BinaryTree<T>{
     
 };
 

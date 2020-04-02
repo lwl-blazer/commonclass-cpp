@@ -11,8 +11,8 @@
 
 #include <stdio.h>
 #include "BinarySearchTree.hpp"
-
-class RedBlackTree final: public BinarySearchTree{
+template <class T>
+class RedBlackTree final: public BinarySearchTree<T>{
     
 };
 

@@ -8,46 +8,57 @@
 
 #include "BinaryTree.hpp"
 
-BinaryTree::BinaryTree(){
+template <class T>
+BinaryTree<T>::BinaryTree(){
     size = 0;
 }
 
-BinaryTree::~BinaryTree(){
+template <class T>
+BinaryTree<T>::~BinaryTree(){
     
 }
 
-bool BinaryTree::isEmpty(){
+template <class T>
+bool BinaryTree<T>::isEmpty(){
     return size == 0;
 }
 
-void BinaryTree::clear(){
+template <class T>
+void BinaryTree<T>::clear(){
     
 }
 
-int BinaryTree::treeHeight(){
+template <class T>
+int BinaryTree<T>::treeHeight(){
     return 0;
 }
 
-template<class T> void BinaryTree::levelOrderTraversalUsingClosure(const std::function<void (T)> &func){
+template<class T>
+void BinaryTree<T>::levelOrderTraversalUsingClosure(const std::function<void (T)> &func){
     func(nullptr);
 }
 
-template<class T> void BinaryTree::preorderTraversalUsingBlock(const std::function<void (T)> &func){
+template<class T>
+void BinaryTree<T>::preorderTraversalUsingBlock(const std::function<void (T)> &func){
     
 }
 
-template<class T> void BinaryTree::inorderTraversalUsingBlock(const std::function<void (T)> &func){
+template<class T>
+void BinaryTree<T>::inorderTraversalUsingBlock(const std::function<void (T)> &func){
     
 }
 
-template<class T> void BinaryTree::postorderTraversalUsingBlock(const std::function<void (T)> &func){
+template<class T>
+void BinaryTree<T>::postorderTraversalUsingBlock(const std::function<void (T)> &func){
     
 }
 
-template<class T> TreeNode<T> BinaryTree::successor(TreeNode<T> node){
+template<class T>
+TreeNode<T> BinaryTree<T>::successor(TreeNode<T> node){
     return nullptr;
 }
 
-template<class T> TreeNode<T> BinaryTree::predecessor(TreeNode<T> node){
+template<class T>
+TreeNode<T> BinaryTree<T>::predecessor(TreeNode<T> node){
     return nullptr;
 }

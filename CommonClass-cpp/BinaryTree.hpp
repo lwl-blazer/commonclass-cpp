@@ -25,12 +25,17 @@ struct TreeNode {
     }
 };
 
-
+template<class T>
 class BinaryTree {
     
 protected:
-    template<class T> TreeNode<T> predecessor(TreeNode<T> node);
-    template<class T> TreeNode<T> successor(TreeNode<T> node);
+    
+    TreeNode<T> root;
+    
+    TreeNode<T> predecessor(TreeNode<T> node);
+    TreeNode<T> successor(TreeNode<T> node);
+
+    
     
 public:
     int size;
@@ -46,23 +51,23 @@ public:
      * 计算二叉树的高度
      * 判断一棵树是否为完全二叉树
      */
-    template<class T> void levelOrderTraversalUsingClosure(std::function<void (T element)> const &func);
+    void levelOrderTraversalUsingClosure(std::function<void (T element)> const &func);
     
     /**前序遍历
      * 先根节点(再左子树再右子树)
      */
-    template<class T> void preorderTraversalUsingBlock(std::function<void (T element)> const &func);
+    void preorderTraversalUsingBlock(std::function<void (T element)> const &func);
     
     /**中序遍历
      * 先左子树 再根节点 再右子树
      */
-    template<class T> void inorderTraversalUsingBlock(std::function<void (T element)> const &func);
+    void inorderTraversalUsingBlock(std::function<void (T element)> const &func);
     
     /**后序遍历
      * 先左子树 再右子树 后根节点
      * 适用于一些先子后父的操作
      **/
-    template<class T> void postorderTraversalUsingBlock(std::function<void (T element)> const &func);
+    void postorderTraversalUsingBlock(std::function<void (T element)> const &func);
 };
 
 #endif /* BinaryTree_hpp */
