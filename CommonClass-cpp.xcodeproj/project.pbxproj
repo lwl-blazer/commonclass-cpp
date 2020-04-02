@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		25995FFC241A0299008B52F1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25995FFB241A0299008B52F1 /* main.cpp */; };
+		259F10852433414E007917E5 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10832433414E007917E5 /* BinaryTree.cpp */; };
+		259F10EF2434A097007917E5 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10ED2434A097007917E5 /* BinarySearchTree.cpp */; };
+		259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F02434A10D007917E5 /* AVLTree.cpp */; };
+		259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F32434A175007917E5 /* RedBlackTree.cpp */; };
 		8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E97B365241D0ED300E80CCD /* AstarSearch.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,14 @@
 /* Begin PBXFileReference section */
 		25995FF8241A0299008B52F1 /* CommonClass-cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CommonClass-cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25995FFB241A0299008B52F1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		259F10832433414E007917E5 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		259F10842433414E007917E5 /* BinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
+		259F10ED2434A097007917E5 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
+		259F10EE2434A097007917E5 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
+		259F10F02434A10D007917E5 /* AVLTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLTree.cpp; sourceTree = "<group>"; };
+		259F10F12434A10D007917E5 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
+		259F10F32434A175007917E5 /* RedBlackTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RedBlackTree.cpp; sourceTree = "<group>"; };
+		259F10F42434A175007917E5 /* RedBlackTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RedBlackTree.hpp; sourceTree = "<group>"; };
 		8E97B365241D0ED300E80CCD /* AstarSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AstarSearch.cpp; sourceTree = "<group>"; };
 		8E97B366241D0ED300E80CCD /* AstarSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AstarSearch.hpp; sourceTree = "<group>"; };
 		8E97B368241D190200E80CCD /* 1.board */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.board; sourceTree = "<group>"; };
@@ -65,6 +77,18 @@
 				8E97B365241D0ED300E80CCD /* AstarSearch.cpp */,
 				8E97B366241D0ED300E80CCD /* AstarSearch.hpp */,
 				8E97B368241D190200E80CCD /* 1.board */,
+
+				8E9E55352423B7A30024D4B4 /* Test.cpp */,
+				8E9E55362423B7A30024D4B4 /* Test.hpp */,
+				259F10832433414E007917E5 /* BinaryTree.cpp */,
+				259F10842433414E007917E5 /* BinaryTree.hpp */,
+				259F10ED2434A097007917E5 /* BinarySearchTree.cpp */,
+				259F10EE2434A097007917E5 /* BinarySearchTree.hpp */,
+				259F10F02434A10D007917E5 /* AVLTree.cpp */,
+				259F10F12434A10D007917E5 /* AVLTree.hpp */,
+				259F10F32434A175007917E5 /* RedBlackTree.cpp */,
+				259F10F42434A175007917E5 /* RedBlackTree.hpp */,
+
 			);
 			path = "CommonClass-cpp";
 			sourceTree = "<group>";
@@ -126,8 +150,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259F10852433414E007917E5 /* BinaryTree.cpp in Sources */,
+				8E9E55372423B7A30024D4B4 /* Test.cpp in Sources */,
+
 				25995FFC241A0299008B52F1 /* main.cpp in Sources */,
+				259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */,
 				8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */,
+				259F10EF2434A097007917E5 /* BinarySearchTree.cpp in Sources */,
+				259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
