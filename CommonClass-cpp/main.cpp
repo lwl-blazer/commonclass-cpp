@@ -8,15 +8,45 @@
 
 #include <iostream>
 #include <algorithm>
+#include <vector>
 #include "AstarSearch.hpp"
 
 using std::cout;
+
+void pointers_to_objects(){
+    cout << __func__ << "\n";
+    vector<int> v{1,2,3,4};
+    vector<int> *point_to_v = &v;
+    for (int a : v) {
+        cout << a << "\n";
+    }
+    
+    for (int i = 0; i < v.size(); i++) {
+        cout << (*point_to_v)[i] << "\n";
+    }
+    cout << "The first element of v is: " << (*point_to_v)[0] << "\n";
+}
+
+void Addone(int *j){
+    (*j)++;
+}
+
+void passint_pointers_to_function(){
+    cout << __func__ << "\n";
+    int i = 1;
+    cout << "i=" << i << "\n";
+    int *pi = &i;
+    Addone(pi);
+    cout << "i=" << i << "\n";
+}
 
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    
+    pointers_to_objects();
+    passint_pointers_to_function();
+    /*
     AStartSearch star;
     vector<vector<State>> board  = star.ReadBoardFile("/Users/blazer/Documents/blazer/Code/commonclass-cpp/CommonClass-cpp/1.board");
     star.PrintBoard(board);
@@ -27,7 +57,7 @@ int main(int argc, const char * argv[]) {
     
     vector<vector<State>>path = star.Search(board, init, goal);
     star.PrintBoard(path);
-    
+    */
     
     /*
     Test test;
