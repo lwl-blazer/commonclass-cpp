@@ -29,6 +29,8 @@ template<class T>
 class BinaryTree {
 private:
     std::function<void (T element)>block;
+    std::function<int (T element1, T element2)>compreBlock;
+    
     void preorderTraversalNode(TreeNode<T> node);
     void inorderTraversalNode(TreeNode<T> node);
     void postorderTraversalNode(TreeNode<T> node);
@@ -41,7 +43,7 @@ protected:
 public:
     int size;
     
-    BinaryTree();
+    BinaryTree(std::function<int (T elemenet1, T element2)> const &compareFunc);
     ~BinaryTree();
 
     void add(T element);

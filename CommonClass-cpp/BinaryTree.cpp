@@ -9,8 +9,9 @@
 #include "BinaryTree.hpp"
 
 template <class T>
-BinaryTree<T>::BinaryTree(){
+BinaryTree<T>::BinaryTree(std::function<int (T elemenet1, T element2)> const &compareFunc){
     size = 0;
+    compreBlock = compareFunc;
 }
 
 template <class T>
