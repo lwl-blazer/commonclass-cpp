@@ -12,6 +12,10 @@
 		259F10EF2434A097007917E5 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10ED2434A097007917E5 /* BinarySearchTree.cpp */; };
 		259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F02434A10D007917E5 /* AVLTree.cpp */; };
 		259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F32434A175007917E5 /* RedBlackTree.cpp */; };
+		8E0343332445F10F006D52B9 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0343312445F10F006D52B9 /* model.cpp */; };
+		8E0343362445F12F006D52B9 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0343342445F12F006D52B9 /* render.cpp */; };
+		8E0343392445F13C006D52B9 /* route_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0343372445F13C006D52B9 /* route_model.cpp */; };
+		8E03433C2445F151006D52B9 /* route_planner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E03433A2445F151006D52B9 /* route_planner.cpp */; };
 		8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E97B365241D0ED300E80CCD /* AstarSearch.cpp */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,14 @@
 		259F10F12434A10D007917E5 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		259F10F32434A175007917E5 /* RedBlackTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RedBlackTree.cpp; sourceTree = "<group>"; };
 		259F10F42434A175007917E5 /* RedBlackTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RedBlackTree.hpp; sourceTree = "<group>"; };
+		8E0343312445F10F006D52B9 /* model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		8E0343322445F10F006D52B9 /* model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = model.hpp; sourceTree = "<group>"; };
+		8E0343342445F12F006D52B9 /* render.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = render.cpp; sourceTree = "<group>"; };
+		8E0343352445F12F006D52B9 /* render.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = render.hpp; sourceTree = "<group>"; };
+		8E0343372445F13C006D52B9 /* route_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = route_model.cpp; sourceTree = "<group>"; };
+		8E0343382445F13C006D52B9 /* route_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = route_model.hpp; sourceTree = "<group>"; };
+		8E03433A2445F151006D52B9 /* route_planner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = route_planner.cpp; sourceTree = "<group>"; };
+		8E03433B2445F151006D52B9 /* route_planner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = route_planner.hpp; sourceTree = "<group>"; };
 		8E97B365241D0ED300E80CCD /* AstarSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AstarSearch.cpp; sourceTree = "<group>"; };
 		8E97B366241D0ED300E80CCD /* AstarSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AstarSearch.hpp; sourceTree = "<group>"; };
 		8E97B368241D190200E80CCD /* 1.board */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.board; sourceTree = "<group>"; };
@@ -77,9 +89,6 @@
 				8E97B365241D0ED300E80CCD /* AstarSearch.cpp */,
 				8E97B366241D0ED300E80CCD /* AstarSearch.hpp */,
 				8E97B368241D190200E80CCD /* 1.board */,
-
-				8E9E55352423B7A30024D4B4 /* Test.cpp */,
-				8E9E55362423B7A30024D4B4 /* Test.hpp */,
 				259F10832433414E007917E5 /* BinaryTree.cpp */,
 				259F10842433414E007917E5 /* BinaryTree.hpp */,
 				259F10ED2434A097007917E5 /* BinarySearchTree.cpp */,
@@ -88,7 +97,14 @@
 				259F10F12434A10D007917E5 /* AVLTree.hpp */,
 				259F10F32434A175007917E5 /* RedBlackTree.cpp */,
 				259F10F42434A175007917E5 /* RedBlackTree.hpp */,
-
+				8E0343312445F10F006D52B9 /* model.cpp */,
+				8E0343322445F10F006D52B9 /* model.hpp */,
+				8E0343342445F12F006D52B9 /* render.cpp */,
+				8E0343352445F12F006D52B9 /* render.hpp */,
+				8E0343372445F13C006D52B9 /* route_model.cpp */,
+				8E0343382445F13C006D52B9 /* route_model.hpp */,
+				8E03433A2445F151006D52B9 /* route_planner.cpp */,
+				8E03433B2445F151006D52B9 /* route_planner.hpp */,
 			);
 			path = "CommonClass-cpp";
 			sourceTree = "<group>";
@@ -151,10 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				259F10852433414E007917E5 /* BinaryTree.cpp in Sources */,
-				8E9E55372423B7A30024D4B4 /* Test.cpp in Sources */,
-
+				8E0343392445F13C006D52B9 /* route_model.cpp in Sources */,
+				8E0343332445F10F006D52B9 /* model.cpp in Sources */,
 				25995FFC241A0299008B52F1 /* main.cpp in Sources */,
+				8E0343362445F12F006D52B9 /* render.cpp in Sources */,
 				259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */,
+				8E03433C2445F151006D52B9 /* route_planner.cpp in Sources */,
 				8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */,
 				259F10EF2434A097007917E5 /* BinarySearchTree.cpp in Sources */,
 				259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */,
@@ -276,6 +294,7 @@
 		25996000241A0299008B52F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -286,6 +305,7 @@
 		25996001241A0299008B52F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ME92NL5RP7;
 				ENABLE_HARDENED_RUNTIME = YES;
