@@ -40,12 +40,43 @@ void passint_pointers_to_function(){
     cout << "i=" << i << "\n";
 }
 
+void instring1(){
+    const int ArSize = 20;
+    char name[ArSize];
+    char dessert[ArSize];
+    
+    //cin 面向单词  遇到空白(空格、制表符、换行符)就到结束
+    /*
+    cout << "Enter you name:\n";
+    std::cin >> name;
+    cout << "Enter you favorite dessert:\n";
+    std::cin >> dessert;
+    cout << "I have some delicious " << dessert << " for you" << name << std::endl;
+     */
+    //cin.getline() 面向行    通过换行符就结束  不包括换行符
+   
+    /*cout << "Enter you name:\n";
+    std::cin.getline(name, ArSize);
+    cout << "Enter you favorite dessert:\n";
+    std::cin.getline(dessert, ArSize);
+    cout << "I have some delicious " << dessert << " for you" << name << std::endl;
+    */
+    
+    //cin.get()  面向行   通过换行符结束  包括换行符
+    cout << "Enter you name:\n";
+    std::cin.get(name, ArSize).get();
+    cout << "Enter you favorite dessert:\n";
+    std::cin.getline(dessert, ArSize);
+    cout << "I have some delicious " << dessert << " for you" << name << std::endl;
+    
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
-    pointers_to_objects();
-    passint_pointers_to_function();
+
+    instring1();
+///    pointers_to_objects();
+//    passint_pointers_to_function();
     /*
     AStartSearch star;
     vector<vector<State>> board  = star.ReadBoardFile("/Users/blazer/Documents/blazer/Code/commonclass-cpp/CommonClass-cpp/1.board");
