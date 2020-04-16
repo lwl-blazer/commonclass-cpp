@@ -7,6 +7,13 @@
 //
 
 #include "model.hpp"
+#include "pugixml.hpp"
+
+#include <iostream>
+#include <string_view>
+#include <cmath>
+#include <algorithm>
+#include <assert.h>
 
 static Model::Road::Type String2RoadType(std::string_view type){
     if (type == "motorway") {
@@ -106,7 +113,7 @@ Model::Model(const std::vector<std::byte> &xml){
     LoadData(xml);
     AdjustCoordinates();
     
-    std::sort(m_Roads.begin(), m_Roads.end(), [](const auto &_1st, const auto &2_nd){
-        return (int)_1st.type < (int)2_nd.type;
+    std::sort(m_Roads.begin(), m_Roads.end(), [](const auto &_1st, const auto &_2nd){
+        return (int)_1st.type < (int)_2nd.type;
     });
 }

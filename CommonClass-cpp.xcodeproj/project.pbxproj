@@ -71,6 +71,7 @@
 			children = (
 				25995FFA241A0299008B52F1 /* CommonClass-cpp */,
 				25995FF9241A0299008B52F1 /* Products */,
+				25B932F624484F8F00C98FE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,13 @@
 				8E03433B2445F151006D52B9 /* route_planner.hpp */,
 			);
 			path = "CommonClass-cpp";
+			sourceTree = "<group>";
+		};
+		25B932F624484F8F00C98FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +306,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CommonClass-cpp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -309,6 +321,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ME92NL5RP7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CommonClass-cpp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
