@@ -12,10 +12,25 @@
 		259F10EF2434A097007917E5 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10ED2434A097007917E5 /* BinarySearchTree.cpp */; };
 		259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F02434A10D007917E5 /* AVLTree.cpp */; };
 		259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259F10F32434A175007917E5 /* RedBlackTree.cpp */; };
-		8E0343332445F10F006D52B9 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0343312445F10F006D52B9 /* model.cpp */; };
-		8E0343362445F12F006D52B9 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0343342445F12F006D52B9 /* render.cpp */; };
-		8E0343392445F13C006D52B9 /* route_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0343372445F13C006D52B9 /* route_model.cpp */; };
-		8E03433C2445F151006D52B9 /* route_planner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E03433A2445F151006D52B9 /* route_planner.cpp */; };
+		8E8FBF71245BB55E00285B78 /* xio2d_cg_paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF0B245BB55E00285B78 /* xio2d_cg_paths.cpp */; };
+		8E8FBF72245BB55E00285B78 /* xio2d_cg_colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF0E245BB55E00285B78 /* xio2d_cg_colors.cpp */; };
+		8E8FBF73245BB55E00285B78 /* xio2d_cg_brushes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF12245BB55E00285B78 /* xio2d_cg_brushes.cpp */; };
+		8E8FBF74245BB55E00285B78 /* xio2d_cg_tmplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF14245BB55E00285B78 /* xio2d_cg_tmplayer.cpp */; };
+		8E8FBF75245BB55E00285B78 /* xio2d_cg_fps_counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF17245BB55E00285B78 /* xio2d_cg_fps_counter.cpp */; };
+		8E8FBF76245BB55E00285B78 /* xio2d_cg_output_surfaces.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF1B245BB55E00285B78 /* xio2d_cg_output_surfaces.mm */; };
+		8E8FBF77245BB55E00285B78 /* xio2d_cg_output_surfaces.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF22245BB55E00285B78 /* xio2d_cg_output_surfaces.mm */; };
+		8E8FBF78245BB55E00285B78 /* xio2d_cg_surfaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF25245BB55E00285B78 /* xio2d_cg_surfaces.cpp */; };
+		8E8FBF79245BB55E00285B78 /* xio2d_cg_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF26245BB55E00285B78 /* xio2d_cg_display.cpp */; };
+		8E8FBF7A245BB55E00285B78 /* xio2d_cg_texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF27245BB55E00285B78 /* xio2d_cg_texture.cpp */; };
+		8E8FBF7B245BB55E00285B78 /* xio2d_cg_paths_figures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF28245BB55E00285B78 /* xio2d_cg_paths_figures.cpp */; };
+		8E8FBF7C245BB55E00285B78 /* xio2d_cg_gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF2C245BB55E00285B78 /* xio2d_cg_gradient.cpp */; };
+		8E8FBF7D245BB55E00285B78 /* test_renderer_fill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF31245BB55E00285B78 /* test_renderer_fill.cpp */; };
+		8E8FBF7E245BB55E00285B78 /* rgba_color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF32245BB55E00285B78 /* rgba_color.cpp */; };
+		8E8FBF7F245BB55E00285B78 /* xinterchangebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF35245BB55E00285B78 /* xinterchangebuffer.cpp */; };
+		8E8FBF80245BB55E00285B78 /* cairo_renderer_xlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF42245BB55E00285B78 /* cairo_renderer_xlib.cpp */; };
+		8E8FBF81245BB55E00285B78 /* cairo_renderer_win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF52245BB55E00285B78 /* cairo_renderer_win32.cpp */; };
+		8E8FBF82245BB55E00285B78 /* cairo_renderer_sdl2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF5B245BB55E00285B78 /* cairo_renderer_sdl2.cpp */; };
+		8E8FBF83245BB55E00285B78 /* cairo_renderer-graphicsmagickinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FBF61245BB55E00285B78 /* cairo_renderer-graphicsmagickinit.cpp */; };
 		8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E97B365241D0ED300E80CCD /* AstarSearch.cpp */; };
 /* End PBXBuildFile section */
 
@@ -42,14 +57,107 @@
 		259F10F12434A10D007917E5 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		259F10F32434A175007917E5 /* RedBlackTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RedBlackTree.cpp; sourceTree = "<group>"; };
 		259F10F42434A175007917E5 /* RedBlackTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RedBlackTree.hpp; sourceTree = "<group>"; };
-		8E0343312445F10F006D52B9 /* model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
-		8E0343322445F10F006D52B9 /* model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = model.hpp; sourceTree = "<group>"; };
-		8E0343342445F12F006D52B9 /* render.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = render.cpp; sourceTree = "<group>"; };
-		8E0343352445F12F006D52B9 /* render.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = render.hpp; sourceTree = "<group>"; };
-		8E0343372445F13C006D52B9 /* route_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = route_model.cpp; sourceTree = "<group>"; };
-		8E0343382445F13C006D52B9 /* route_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = route_model.hpp; sourceTree = "<group>"; };
-		8E03433A2445F151006D52B9 /* route_planner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = route_planner.cpp; sourceTree = "<group>"; };
-		8E03433B2445F151006D52B9 /* route_planner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = route_planner.hpp; sourceTree = "<group>"; };
+		8E8FBF05245BB55E00285B78 /* xsurfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsurfaces.h; sourceTree = "<group>"; };
+		8E8FBF06245BB55E00285B78 /* xdiagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xdiagnostics.h; sourceTree = "<group>"; };
+		8E8FBF07245BB55E00285B78 /* xpath_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpath_impl.h; sourceTree = "<group>"; };
+		8E8FBF08245BB55E00285B78 /* xsurfaces_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsurfaces_impl.h; sourceTree = "<group>"; };
+		8E8FBF09245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF0B245BB55E00285B78 /* xio2d_cg_paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_paths.cpp; sourceTree = "<group>"; };
+		8E8FBF0C245BB55E00285B78 /* xio2d_cg_texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_texture.h; sourceTree = "<group>"; };
+		8E8FBF0D245BB55E00285B78 /* xio2d_cg_fps_counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_fps_counter.h; sourceTree = "<group>"; };
+		8E8FBF0E245BB55E00285B78 /* xio2d_cg_colors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_colors.cpp; sourceTree = "<group>"; };
+		8E8FBF0F245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF10245BB55E00285B78 /* xio2d_cg_tmplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_tmplayer.h; sourceTree = "<group>"; };
+		8E8FBF11245BB55E00285B78 /* xio2d_cg_paths_figures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_paths_figures.h; sourceTree = "<group>"; };
+		8E8FBF12245BB55E00285B78 /* xio2d_cg_brushes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_brushes.cpp; sourceTree = "<group>"; };
+		8E8FBF13245BB55E00285B78 /* xio2d_cg_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF14245BB55E00285B78 /* xio2d_cg_tmplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_tmplayer.cpp; sourceTree = "<group>"; };
+		8E8FBF15245BB55E00285B78 /* xio2d_cg_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_main.h; sourceTree = "<group>"; };
+		8E8FBF16245BB55E00285B78 /* xio2d_cg_display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_display.h; sourceTree = "<group>"; };
+		8E8FBF17245BB55E00285B78 /* xio2d_cg_fps_counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_fps_counter.cpp; sourceTree = "<group>"; };
+		8E8FBF18245BB55E00285B78 /* xio2d_cg_colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_colors.h; sourceTree = "<group>"; };
+		8E8FBF1A245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF1B245BB55E00285B78 /* xio2d_cg_output_surfaces.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = xio2d_cg_output_surfaces.mm; sourceTree = "<group>"; };
+		8E8FBF1C245BB55E00285B78 /* io2d_coregraphics_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d_coregraphics_ios.h; sourceTree = "<group>"; };
+		8E8FBF1D245BB55E00285B78 /* xio2d_cg_output_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_output_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF1E245BB55E00285B78 /* io2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d.h; sourceTree = "<group>"; };
+		8E8FBF20245BB55E00285B78 /* io2d_coregraphics_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d_coregraphics_mac.h; sourceTree = "<group>"; };
+		8E8FBF21245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF22245BB55E00285B78 /* xio2d_cg_output_surfaces.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = xio2d_cg_output_surfaces.mm; sourceTree = "<group>"; };
+		8E8FBF23245BB55E00285B78 /* xio2d_cg_output_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_output_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF24245BB55E00285B78 /* io2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d.h; sourceTree = "<group>"; };
+		8E8FBF25245BB55E00285B78 /* xio2d_cg_surfaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_surfaces.cpp; sourceTree = "<group>"; };
+		8E8FBF26245BB55E00285B78 /* xio2d_cg_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_display.cpp; sourceTree = "<group>"; };
+		8E8FBF27245BB55E00285B78 /* xio2d_cg_texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_texture.cpp; sourceTree = "<group>"; };
+		8E8FBF28245BB55E00285B78 /* xio2d_cg_paths_figures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_paths_figures.cpp; sourceTree = "<group>"; };
+		8E8FBF29245BB55E00285B78 /* xio2d_cg_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_paths.h; sourceTree = "<group>"; };
+		8E8FBF2A245BB55E00285B78 /* xio2d_cg_brushes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_brushes.h; sourceTree = "<group>"; };
+		8E8FBF2B245BB55E00285B78 /* xio2d_cg_gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_gradient.h; sourceTree = "<group>"; };
+		8E8FBF2C245BB55E00285B78 /* xio2d_cg_gradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xio2d_cg_gradient.cpp; sourceTree = "<group>"; };
+		8E8FBF2D245BB55E00285B78 /* xio2d_cg_interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_interop.h; sourceTree = "<group>"; };
+		8E8FBF2E245BB55E00285B78 /* xio2d_cg_surface_state_props.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cg_surface_state_props.h; sourceTree = "<group>"; };
+		8E8FBF2F245BB55E00285B78 /* xcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcolor.h; sourceTree = "<group>"; };
+		8E8FBF30245BB55E00285B78 /* test_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_process.h; sourceTree = "<group>"; };
+		8E8FBF31245BB55E00285B78 /* test_renderer_fill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_renderer_fill.cpp; sourceTree = "<group>"; };
+		8E8FBF32245BB55E00285B78 /* rgba_color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rgba_color.cpp; sourceTree = "<group>"; };
+		8E8FBF33245BB55E00285B78 /* xinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinput.h; sourceTree = "<group>"; };
+		8E8FBF34245BB55E00285B78 /* xio2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d.h; sourceTree = "<group>"; };
+		8E8FBF35245BB55E00285B78 /* xinterchangebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xinterchangebuffer.cpp; sourceTree = "<group>"; };
+		8E8FBF36245BB55E00285B78 /* xinterchangebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinterchangebuffer.h; sourceTree = "<group>"; };
+		8E8FBF38245BB55E00285B78 /* xcairo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo.h; sourceTree = "<group>"; };
+		8E8FBF39245BB55E00285B78 /* xcairo_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo_helpers.h; sourceTree = "<group>"; };
+		8E8FBF3A245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF3B245BB55E00285B78 /* xcairo_paths_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo_paths_impl.h; sourceTree = "<group>"; };
+		8E8FBF3C245BB55E00285B78 /* xio2d_cairo_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_main.h; sourceTree = "<group>"; };
+		8E8FBF3D245BB55E00285B78 /* xcairo_surfaces_image_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo_surfaces_image_impl.h; sourceTree = "<group>"; };
+		8E8FBF3E245BB55E00285B78 /* xcairo_surfaces_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo_surfaces_impl.h; sourceTree = "<group>"; };
+		8E8FBF40245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF41245BB55E00285B78 /* io2d_cairo_xlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d_cairo_xlib.h; sourceTree = "<group>"; };
+		8E8FBF42245BB55E00285B78 /* cairo_renderer_xlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cairo_renderer_xlib.cpp; sourceTree = "<group>"; };
+		8E8FBF43245BB55E00285B78 /* xio2d_cairo_xlib_output_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_xlib_output_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF44245BB55E00285B78 /* xio2d_cairo_xlib_unmanaged_output_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_xlib_unmanaged_output_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF45245BB55E00285B78 /* xio2d_cairo_xlib_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_xlib_main.h; sourceTree = "<group>"; };
+		8E8FBF46245BB55E00285B78 /* xio2d_cairo_xlib_surfaces_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_xlib_surfaces_impl.h; sourceTree = "<group>"; };
+		8E8FBF47245BB55E00285B78 /* xio2d_cairo_xlib_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_xlib_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF48245BB55E00285B78 /* io2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d.h; sourceTree = "<group>"; };
+		8E8FBF49245BB55E00285B78 /* xcairo_brushes_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo_brushes_impl.h; sourceTree = "<group>"; };
+		8E8FBF4A245BB55E00285B78 /* xcairo_surface_state_props_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcairo_surface_state_props_impl.h; sourceTree = "<group>"; };
+		8E8FBF4C245BB55E00285B78 /* xio2d_cairo_win32_unmanaged_output_surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_win32_unmanaged_output_surface.h; sourceTree = "<group>"; };
+		8E8FBF4D245BB55E00285B78 /* xio2d_cairo_win32_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_win32_main.h; sourceTree = "<group>"; };
+		8E8FBF4E245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF4F245BB55E00285B78 /* xio2d_cairo_win32_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_win32_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF50245BB55E00285B78 /* xio2d_cairo_win32_surfaces_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_win32_surfaces_impl.h; sourceTree = "<group>"; };
+		8E8FBF51245BB55E00285B78 /* xio2d_cairo_win32_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_win32_error.h; sourceTree = "<group>"; };
+		8E8FBF52245BB55E00285B78 /* cairo_renderer_win32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cairo_renderer_win32.cpp; sourceTree = "<group>"; };
+		8E8FBF53245BB55E00285B78 /* io2d_cairo_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d_cairo_win32.h; sourceTree = "<group>"; };
+		8E8FBF54245BB55E00285B78 /* xio2d_cairo_win32_output_surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_win32_output_surface.h; sourceTree = "<group>"; };
+		8E8FBF55245BB55E00285B78 /* io2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d.h; sourceTree = "<group>"; };
+		8E8FBF57245BB55E00285B78 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8E8FBF58245BB55E00285B78 /* xio2d_cairo_sdl2_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_sdl2_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF59245BB55E00285B78 /* xio2d_cairo_sdl2_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_sdl2_error.h; sourceTree = "<group>"; };
+		8E8FBF5A245BB55E00285B78 /* io2d_cairo_sdl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d_cairo_sdl2.h; sourceTree = "<group>"; };
+		8E8FBF5B245BB55E00285B78 /* cairo_renderer_sdl2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cairo_renderer_sdl2.cpp; sourceTree = "<group>"; };
+		8E8FBF5C245BB55E00285B78 /* xio2d_cairo_sdl2_output_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_sdl2_output_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF5D245BB55E00285B78 /* xio2d_cairo_sdl2_surfaces_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_sdl2_surfaces_impl.h; sourceTree = "<group>"; };
+		8E8FBF5E245BB55E00285B78 /* xio2d_cairo_sdl2_unmanaged_output_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_sdl2_unmanaged_output_surfaces.h; sourceTree = "<group>"; };
+		8E8FBF5F245BB55E00285B78 /* xio2d_cairo_sdl2_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_cairo_sdl2_main.h; sourceTree = "<group>"; };
+		8E8FBF60245BB55E00285B78 /* io2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io2d.h; sourceTree = "<group>"; };
+		8E8FBF61245BB55E00285B78 /* cairo_renderer-graphicsmagickinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "cairo_renderer-graphicsmagickinit.cpp"; sourceTree = "<group>"; };
+		8E8FBF62245BB55E00285B78 /* test_renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_renderer.h; sourceTree = "<group>"; };
+		8E8FBF63245BB55E00285B78 /* xgraphicsmath_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgraphicsmath_impl.h; sourceTree = "<group>"; };
+		8E8FBF64245BB55E00285B78 /* xtext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtext.h; sourceTree = "<group>"; };
+		8E8FBF65245BB55E00285B78 /* xpathbuilder_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpathbuilder_impl.h; sourceTree = "<group>"; };
+		8E8FBF66245BB55E00285B78 /* xbrushes_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xbrushes_impl.h; sourceTree = "<group>"; };
+		8E8FBF67245BB55E00285B78 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8E8FBF68245BB55E00285B78 /* xpath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpath.h; sourceTree = "<group>"; };
+		8E8FBF69245BB55E00285B78 /* xbrushes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xbrushes.h; sourceTree = "<group>"; };
+		8E8FBF6A245BB55E00285B78 /* xsurfacesprops_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsurfacesprops_impl.h; sourceTree = "<group>"; };
+		8E8FBF6B245BB55E00285B78 /* xgraphicsmathfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgraphicsmathfloat.h; sourceTree = "<group>"; };
+		8E8FBF6C245BB55E00285B78 /* xsurfaces_enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsurfaces_enums.h; sourceTree = "<group>"; };
+		8E8FBF6D245BB55E00285B78 /* xio2d_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xio2d_impl.h; sourceTree = "<group>"; };
+		8E8FBF6E245BB55E00285B78 /* xgraphicsmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgraphicsmath.h; sourceTree = "<group>"; };
+		8E8FBF6F245BB55E00285B78 /* xsystemheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsystemheaders.h; sourceTree = "<group>"; };
+		8E8FBF70245BB55E00285B78 /* xgraphicsmathfloat_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgraphicsmathfloat_impl.h; sourceTree = "<group>"; };
 		8E97B365241D0ED300E80CCD /* AstarSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AstarSearch.cpp; sourceTree = "<group>"; };
 		8E97B366241D0ED300E80CCD /* AstarSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AstarSearch.hpp; sourceTree = "<group>"; };
 		8E97B368241D190200E80CCD /* 1.board */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.board; sourceTree = "<group>"; };
@@ -85,6 +193,7 @@
 		25995FFA241A0299008B52F1 /* CommonClass-cpp */ = {
 			isa = PBXGroup;
 			children = (
+				8E8FBF04245BB55E00285B78 /* P0267_RefImpl */,
 				25995FFB241A0299008B52F1 /* main.cpp */,
 				8E97B365241D0ED300E80CCD /* AstarSearch.cpp */,
 				8E97B366241D0ED300E80CCD /* AstarSearch.hpp */,
@@ -97,16 +206,172 @@
 				259F10F12434A10D007917E5 /* AVLTree.hpp */,
 				259F10F32434A175007917E5 /* RedBlackTree.cpp */,
 				259F10F42434A175007917E5 /* RedBlackTree.hpp */,
-				8E0343312445F10F006D52B9 /* model.cpp */,
-				8E0343322445F10F006D52B9 /* model.hpp */,
-				8E0343342445F12F006D52B9 /* render.cpp */,
-				8E0343352445F12F006D52B9 /* render.hpp */,
-				8E0343372445F13C006D52B9 /* route_model.cpp */,
-				8E0343382445F13C006D52B9 /* route_model.hpp */,
-				8E03433A2445F151006D52B9 /* route_planner.cpp */,
-				8E03433B2445F151006D52B9 /* route_planner.hpp */,
 			);
 			path = "CommonClass-cpp";
+			sourceTree = "<group>";
+		};
+		8E8FBF04245BB55E00285B78 /* P0267_RefImpl */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF05245BB55E00285B78 /* xsurfaces.h */,
+				8E8FBF06245BB55E00285B78 /* xdiagnostics.h */,
+				8E8FBF07245BB55E00285B78 /* xpath_impl.h */,
+				8E8FBF08245BB55E00285B78 /* xsurfaces_impl.h */,
+				8E8FBF09245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF0A245BB55E00285B78 /* coregraphics */,
+				8E8FBF2F245BB55E00285B78 /* xcolor.h */,
+				8E8FBF30245BB55E00285B78 /* test_process.h */,
+				8E8FBF31245BB55E00285B78 /* test_renderer_fill.cpp */,
+				8E8FBF32245BB55E00285B78 /* rgba_color.cpp */,
+				8E8FBF33245BB55E00285B78 /* xinput.h */,
+				8E8FBF34245BB55E00285B78 /* xio2d.h */,
+				8E8FBF35245BB55E00285B78 /* xinterchangebuffer.cpp */,
+				8E8FBF36245BB55E00285B78 /* xinterchangebuffer.h */,
+				8E8FBF37245BB55E00285B78 /* cairo */,
+				8E8FBF62245BB55E00285B78 /* test_renderer.h */,
+				8E8FBF63245BB55E00285B78 /* xgraphicsmath_impl.h */,
+				8E8FBF64245BB55E00285B78 /* xtext.h */,
+				8E8FBF65245BB55E00285B78 /* xpathbuilder_impl.h */,
+				8E8FBF66245BB55E00285B78 /* xbrushes_impl.h */,
+				8E8FBF67245BB55E00285B78 /* .gitignore */,
+				8E8FBF68245BB55E00285B78 /* xpath.h */,
+				8E8FBF69245BB55E00285B78 /* xbrushes.h */,
+				8E8FBF6A245BB55E00285B78 /* xsurfacesprops_impl.h */,
+				8E8FBF6B245BB55E00285B78 /* xgraphicsmathfloat.h */,
+				8E8FBF6C245BB55E00285B78 /* xsurfaces_enums.h */,
+				8E8FBF6D245BB55E00285B78 /* xio2d_impl.h */,
+				8E8FBF6E245BB55E00285B78 /* xgraphicsmath.h */,
+				8E8FBF6F245BB55E00285B78 /* xsystemheaders.h */,
+				8E8FBF70245BB55E00285B78 /* xgraphicsmathfloat_impl.h */,
+			);
+			path = P0267_RefImpl;
+			sourceTree = "<group>";
+		};
+		8E8FBF0A245BB55E00285B78 /* coregraphics */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF0B245BB55E00285B78 /* xio2d_cg_paths.cpp */,
+				8E8FBF0C245BB55E00285B78 /* xio2d_cg_texture.h */,
+				8E8FBF0D245BB55E00285B78 /* xio2d_cg_fps_counter.h */,
+				8E8FBF0E245BB55E00285B78 /* xio2d_cg_colors.cpp */,
+				8E8FBF0F245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF10245BB55E00285B78 /* xio2d_cg_tmplayer.h */,
+				8E8FBF11245BB55E00285B78 /* xio2d_cg_paths_figures.h */,
+				8E8FBF12245BB55E00285B78 /* xio2d_cg_brushes.cpp */,
+				8E8FBF13245BB55E00285B78 /* xio2d_cg_surfaces.h */,
+				8E8FBF14245BB55E00285B78 /* xio2d_cg_tmplayer.cpp */,
+				8E8FBF15245BB55E00285B78 /* xio2d_cg_main.h */,
+				8E8FBF16245BB55E00285B78 /* xio2d_cg_display.h */,
+				8E8FBF17245BB55E00285B78 /* xio2d_cg_fps_counter.cpp */,
+				8E8FBF18245BB55E00285B78 /* xio2d_cg_colors.h */,
+				8E8FBF19245BB55E00285B78 /* ios */,
+				8E8FBF1F245BB55E00285B78 /* mac */,
+				8E8FBF25245BB55E00285B78 /* xio2d_cg_surfaces.cpp */,
+				8E8FBF26245BB55E00285B78 /* xio2d_cg_display.cpp */,
+				8E8FBF27245BB55E00285B78 /* xio2d_cg_texture.cpp */,
+				8E8FBF28245BB55E00285B78 /* xio2d_cg_paths_figures.cpp */,
+				8E8FBF29245BB55E00285B78 /* xio2d_cg_paths.h */,
+				8E8FBF2A245BB55E00285B78 /* xio2d_cg_brushes.h */,
+				8E8FBF2B245BB55E00285B78 /* xio2d_cg_gradient.h */,
+				8E8FBF2C245BB55E00285B78 /* xio2d_cg_gradient.cpp */,
+				8E8FBF2D245BB55E00285B78 /* xio2d_cg_interop.h */,
+				8E8FBF2E245BB55E00285B78 /* xio2d_cg_surface_state_props.h */,
+			);
+			path = coregraphics;
+			sourceTree = "<group>";
+		};
+		8E8FBF19245BB55E00285B78 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF1A245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF1B245BB55E00285B78 /* xio2d_cg_output_surfaces.mm */,
+				8E8FBF1C245BB55E00285B78 /* io2d_coregraphics_ios.h */,
+				8E8FBF1D245BB55E00285B78 /* xio2d_cg_output_surfaces.h */,
+				8E8FBF1E245BB55E00285B78 /* io2d.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		8E8FBF1F245BB55E00285B78 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF20245BB55E00285B78 /* io2d_coregraphics_mac.h */,
+				8E8FBF21245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF22245BB55E00285B78 /* xio2d_cg_output_surfaces.mm */,
+				8E8FBF23245BB55E00285B78 /* xio2d_cg_output_surfaces.h */,
+				8E8FBF24245BB55E00285B78 /* io2d.h */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		8E8FBF37245BB55E00285B78 /* cairo */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF38245BB55E00285B78 /* xcairo.h */,
+				8E8FBF39245BB55E00285B78 /* xcairo_helpers.h */,
+				8E8FBF3A245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF3B245BB55E00285B78 /* xcairo_paths_impl.h */,
+				8E8FBF3C245BB55E00285B78 /* xio2d_cairo_main.h */,
+				8E8FBF3D245BB55E00285B78 /* xcairo_surfaces_image_impl.h */,
+				8E8FBF3E245BB55E00285B78 /* xcairo_surfaces_impl.h */,
+				8E8FBF3F245BB55E00285B78 /* xlib */,
+				8E8FBF49245BB55E00285B78 /* xcairo_brushes_impl.h */,
+				8E8FBF4A245BB55E00285B78 /* xcairo_surface_state_props_impl.h */,
+				8E8FBF4B245BB55E00285B78 /* win32 */,
+				8E8FBF56245BB55E00285B78 /* sdl2 */,
+				8E8FBF61245BB55E00285B78 /* cairo_renderer-graphicsmagickinit.cpp */,
+			);
+			path = cairo;
+			sourceTree = "<group>";
+		};
+		8E8FBF3F245BB55E00285B78 /* xlib */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF40245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF41245BB55E00285B78 /* io2d_cairo_xlib.h */,
+				8E8FBF42245BB55E00285B78 /* cairo_renderer_xlib.cpp */,
+				8E8FBF43245BB55E00285B78 /* xio2d_cairo_xlib_output_surfaces.h */,
+				8E8FBF44245BB55E00285B78 /* xio2d_cairo_xlib_unmanaged_output_surfaces.h */,
+				8E8FBF45245BB55E00285B78 /* xio2d_cairo_xlib_main.h */,
+				8E8FBF46245BB55E00285B78 /* xio2d_cairo_xlib_surfaces_impl.h */,
+				8E8FBF47245BB55E00285B78 /* xio2d_cairo_xlib_surfaces.h */,
+				8E8FBF48245BB55E00285B78 /* io2d.h */,
+			);
+			path = xlib;
+			sourceTree = "<group>";
+		};
+		8E8FBF4B245BB55E00285B78 /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF4C245BB55E00285B78 /* xio2d_cairo_win32_unmanaged_output_surface.h */,
+				8E8FBF4D245BB55E00285B78 /* xio2d_cairo_win32_main.h */,
+				8E8FBF4E245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF4F245BB55E00285B78 /* xio2d_cairo_win32_surfaces.h */,
+				8E8FBF50245BB55E00285B78 /* xio2d_cairo_win32_surfaces_impl.h */,
+				8E8FBF51245BB55E00285B78 /* xio2d_cairo_win32_error.h */,
+				8E8FBF52245BB55E00285B78 /* cairo_renderer_win32.cpp */,
+				8E8FBF53245BB55E00285B78 /* io2d_cairo_win32.h */,
+				8E8FBF54245BB55E00285B78 /* xio2d_cairo_win32_output_surface.h */,
+				8E8FBF55245BB55E00285B78 /* io2d.h */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		8E8FBF56245BB55E00285B78 /* sdl2 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FBF57245BB55E00285B78 /* CMakeLists.txt */,
+				8E8FBF58245BB55E00285B78 /* xio2d_cairo_sdl2_surfaces.h */,
+				8E8FBF59245BB55E00285B78 /* xio2d_cairo_sdl2_error.h */,
+				8E8FBF5A245BB55E00285B78 /* io2d_cairo_sdl2.h */,
+				8E8FBF5B245BB55E00285B78 /* cairo_renderer_sdl2.cpp */,
+				8E8FBF5C245BB55E00285B78 /* xio2d_cairo_sdl2_output_surfaces.h */,
+				8E8FBF5D245BB55E00285B78 /* xio2d_cairo_sdl2_surfaces_impl.h */,
+				8E8FBF5E245BB55E00285B78 /* xio2d_cairo_sdl2_unmanaged_output_surfaces.h */,
+				8E8FBF5F245BB55E00285B78 /* xio2d_cairo_sdl2_main.h */,
+				8E8FBF60245BB55E00285B78 /* io2d.h */,
+			);
+			path = sdl2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,14 +431,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8FBF74245BB55E00285B78 /* xio2d_cg_tmplayer.cpp in Sources */,
+				8E8FBF7E245BB55E00285B78 /* rgba_color.cpp in Sources */,
+				8E8FBF76245BB55E00285B78 /* xio2d_cg_output_surfaces.mm in Sources */,
+				8E8FBF78245BB55E00285B78 /* xio2d_cg_surfaces.cpp in Sources */,
+				8E8FBF71245BB55E00285B78 /* xio2d_cg_paths.cpp in Sources */,
+				8E8FBF7A245BB55E00285B78 /* xio2d_cg_texture.cpp in Sources */,
+				8E8FBF73245BB55E00285B78 /* xio2d_cg_brushes.cpp in Sources */,
 				259F10852433414E007917E5 /* BinaryTree.cpp in Sources */,
-				8E0343392445F13C006D52B9 /* route_model.cpp in Sources */,
-				8E0343332445F10F006D52B9 /* model.cpp in Sources */,
+				8E8FBF82245BB55E00285B78 /* cairo_renderer_sdl2.cpp in Sources */,
+				8E8FBF80245BB55E00285B78 /* cairo_renderer_xlib.cpp in Sources */,
 				25995FFC241A0299008B52F1 /* main.cpp in Sources */,
-				8E0343362445F12F006D52B9 /* render.cpp in Sources */,
+				8E8FBF81245BB55E00285B78 /* cairo_renderer_win32.cpp in Sources */,
+				8E8FBF7B245BB55E00285B78 /* xio2d_cg_paths_figures.cpp in Sources */,
+				8E8FBF7D245BB55E00285B78 /* test_renderer_fill.cpp in Sources */,
 				259F10F22434A10D007917E5 /* AVLTree.cpp in Sources */,
-				8E03433C2445F151006D52B9 /* route_planner.cpp in Sources */,
+				8E8FBF75245BB55E00285B78 /* xio2d_cg_fps_counter.cpp in Sources */,
+				8E8FBF77245BB55E00285B78 /* xio2d_cg_output_surfaces.mm in Sources */,
+				8E8FBF7F245BB55E00285B78 /* xinterchangebuffer.cpp in Sources */,
+				8E8FBF72245BB55E00285B78 /* xio2d_cg_colors.cpp in Sources */,
+				8E8FBF83245BB55E00285B78 /* cairo_renderer-graphicsmagickinit.cpp in Sources */,
 				8E97B367241D0ED300E80CCD /* AstarSearch.cpp in Sources */,
+				8E8FBF7C245BB55E00285B78 /* xio2d_cg_gradient.cpp in Sources */,
+				8E8FBF79245BB55E00285B78 /* xio2d_cg_display.cpp in Sources */,
 				259F10EF2434A097007917E5 /* BinarySearchTree.cpp in Sources */,
 				259F10F52434A175007917E5 /* RedBlackTree.cpp in Sources */,
 			);

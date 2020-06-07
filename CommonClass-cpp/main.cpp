@@ -10,8 +10,17 @@
 #include <algorithm>
 #include <vector>
 #include "AstarSearch.hpp"
+#include <cstring>
 
 using std::cout;
+using std::endl;
+
+struct inflatble{
+    std::string name;
+    float volume;
+    double price;
+};
+
 
 void pointers_to_objects(){
     cout << __func__ << "\n";
@@ -71,10 +80,56 @@ void instring1(){
     
 }
 
+void instring2(){
+    char anmial[20] = "bear";
+    const char *bird = "wren";
+    char *ps;
+    
+    cout << anmial << " and ";
+    cout << bird << "\n";
+    
+    
+    cout << "Enter a kind of animal:";
+    std::cin >> anmial;
+    
+    ps = anmial;
+    cout << ps << "!\n";
+    cout << "Before using strcpy():\n";
+    
+    cout << anmial << "at" << (int *)anmial << "\n";
+    
+    cout << ps << "at" << (int *)ps << endl;
+    
+    ps = new char[strlen(anmial) + 1];
+    strcpy(ps, anmial);
+    
+    
+    cout << "After using strcpy():\n";
+    cout << anmial << "at" << (int *)anmial << endl;
+    cout << ps << "at" << (int *)ps << endl;
+    delete [] ps;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
 
-    instring1();
+//    instring1();
+    instring2();
+    
+    
+    inflatble in1 = {"name", 12, 32};
+    std::cout << in1.name << std::endl;
+    
+    inflatble in2 = in1;
+    in1.name = "name2";
+    std::cout << in1.name << "  " << in2.name <<std::endl;
+
+    in2.name = "name3";
+    std::cout << in1.name << "  " << in2.name <<std::endl;
+
+    
+    
+    
 ///    pointers_to_objects();
 //    passint_pointers_to_function();
     /*
