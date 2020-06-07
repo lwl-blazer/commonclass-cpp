@@ -29,26 +29,34 @@ template<class T>
 class BinaryTree {
 private:
     std::function<void (T element)>block;
+    /** 大于0 小于0 等于0*/
     std::function<int (T element1, T element2)>compreBlock;
     
     void preorderTraversalNode(TreeNode<T> node);
     void inorderTraversalNode(TreeNode<T> node);
     void postorderTraversalNode(TreeNode<T> node);
-
+    bool elementIsNotNull(T element);
+    
     TreeNode<T> predecessor(TreeNode<T> node);
     TreeNode<T> successor(TreeNode<T> node);
-protected:
+    int compareable(T element1, T element2);
+    
+    int size;
     TreeNode<T> root;
+
     
 public:
-    int size;
-    
     BinaryTree(std::function<int (T elemenet1, T element2)> const &compareFunc);
     ~BinaryTree();
 
+    int count();
     void add(T element);
+    void remove(T element);
+    bool contains(T element);
     bool isEmpty();
     void clear();
+
+    
     int treeHeight();
   
     /** 层序遍历
